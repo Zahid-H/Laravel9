@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class Postcontrller extends Controller
 {
     public function index(){
-        return 'I am from route controller';
+        return view('post.Home');
     }
 }

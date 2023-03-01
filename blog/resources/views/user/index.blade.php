@@ -7,8 +7,9 @@
     <title>User page</title>
 </head>
 <body>
-    <p>User id is : {{ $userId }}</p>
-    <p>User name is: {{ $userName }}</p>
+    {{-- <p>User id is : {{ $userId }}</p>
+    <p>User name is: {{ $userName }}</p> --}}
+    <p></p>
 
 </body>
 </html>
