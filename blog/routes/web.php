@@ -26,8 +26,19 @@ route::get('/hello',function(){
 //     return "user id is: ".$userid;
 
 // });
-route::get('/user/{id?}/{name?}',function($userid=null,$username=null){
-    return 'User id is: '.$userid. 'Username is: '.$username;
+// route::get('/user/{id?}/{name?}',function($userid=null,$username=null){
+//     return 'User id is: '.$userid. 'Username is: '.$username;
 
+// });
+
+route::get('/lara', function(){
+    return view('greating');
 });
 
+route::get('user/{id?}/{name?}', function($userId="1",$userName="zahid"){
+    return view('user.index',[
+        'userId'=>$userId,
+        'userName'=>$userName,
+
+    ]);
+});
