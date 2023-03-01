@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Postcontrller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,3 +43,6 @@ route::get('user/{id?}/{name?}', function($userId="1",$userName="zahid"){
 
     ]);
 });
+
+route::get('/posts',[Postcontrller::class,'index']);
+
