@@ -22,7 +22,12 @@ route::get('/hello',function(){
 
 });
 
-route::get('/user/{userid}',function($userid){
-    return "user id is: ".$userid;
+// route::get('/user/{userid}',function($userid){
+//     return "user id is: ".$userid;
+
+// });
+route::get('/user/{id?}/{name?}',function($userid=null,$username=null){
+    return 'User id is: '.$userid. 'Username is: '.$username;
 
 });
+
