@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+route::get('/hello',function(){
+    return "Hello Laravel 9";
+
+});
+
+route::get('/user/{userid}',function($userid){
+    return "user id is: ".$userid;
+
+});
