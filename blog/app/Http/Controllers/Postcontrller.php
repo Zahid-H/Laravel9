@@ -10,3 +10,4 @@ class Postcontrller extends Controller
         return view('post.Home');
     }
 }
+

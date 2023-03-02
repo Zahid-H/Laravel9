@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Homecontroller;
 use App\Http\Controllers\Postcontrller;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -46,3 +50,6 @@ route::get('user/{id?}/{name?}', function($userId="1",$userName="zahid"){
 
 route::get('/posts',[Postcontrller::class,'index']);
 
+route::get('/dash',[Homecontroller::class,'showMsg']);
+
+route::get('/student',[StudentController::class]);

@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contrtoller</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>I am from single action controller! </title>
 </head>
 <body>
-    <p>I am from the controller view home</p>
     
 </body>
 </html>
